@@ -372,7 +372,10 @@ export default class Autowhatever extends Component {
       renderItemsContainer,
       highlightedSectionIndex,
       highlightedItemIndex,
+      inputProps
     } = this.props;
+const typeForm = (inputProps && inputProps.type)?inputProps.type:'text'
+
     const { isInputFocused } = this.state;
     const renderedItems = multiSection
       ? this.renderSections()
@@ -396,7 +399,7 @@ export default class Autowhatever extends Component {
       ...this.props.containerProps,
     };
     const inputComponent = renderInputComponent({
-      type: 'text',
+      type: typeForm,
       value: '',
       autoComplete: 'off',
       'aria-autocomplete': 'list',
