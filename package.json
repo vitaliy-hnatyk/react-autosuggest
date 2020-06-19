@@ -84,7 +84,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "files": [
-    "dist"
+    "src/*"
   ],
   "husky": {
     "hooks": {
