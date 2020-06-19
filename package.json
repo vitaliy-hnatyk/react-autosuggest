@@ -2,7 +2,7 @@
   "name": "react-autosuggest",
   "version": "10.0.1",
   "description": "WAI-ARIA compliant React autosuggest component",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/vitaliy-hnatyk/react-autosuggest.git"
