@@ -374,6 +374,7 @@ var Autowhatever = /*#__PURE__*/function (_Component) {
           highlightedItemIndex = _this$props4.highlightedItemIndex,
           inputProps = _this$props4.inputProps;
       var typeForm = inputProps && inputProps.type ? inputProps.type : 'text';
+      var childForm = inputProps && inputProps.childForm ? inputProps.childForm : '';
       var isInputFocused = this.state.isInputFocused;
       var renderedItems = multiSection ? this.renderSections() : this.renderItems();
       var isOpen = renderedItems !== null;
@@ -409,7 +410,7 @@ var Autowhatever = /*#__PURE__*/function (_Component) {
         }),
         children: renderedItems
       });
-      return /*#__PURE__*/_react["default"].createElement("div", containerProps, inputComponent, itemsContainer);
+      return /*#__PURE__*/_react["default"].createElement("div", containerProps, inputComponent, childForm, itemsContainer);
     }
   }]);
 

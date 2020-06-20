@@ -374,7 +374,8 @@ export default class Autowhatever extends Component {
       highlightedItemIndex,
       inputProps
     } = this.props;
-const typeForm = (inputProps && inputProps.type)?inputProps.type:'text'
+    const typeForm = (inputProps && inputProps.type)?inputProps.type:'text'
+    const childForm = (inputProps && inputProps.childForm)?inputProps.childForm:''
 
     const { isInputFocused } = this.state;
     const renderedItems = multiSection
@@ -434,6 +435,7 @@ const typeForm = (inputProps && inputProps.type)?inputProps.type:'text'
     return (
       <div {...containerProps}>
         {inputComponent}
+        {childForm}
         {itemsContainer}
       </div>
     );
