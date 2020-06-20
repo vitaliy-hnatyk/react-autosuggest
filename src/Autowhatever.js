@@ -375,8 +375,6 @@ export default class Autowhatever extends Component {
       inputProps
     } = this.props;
     const typeForm = (inputProps && inputProps.type)?inputProps.type:'text'
-    const childForm = (inputProps && inputProps.childForm)?inputProps.childForm:''
-
     const { isInputFocused } = this.state;
     const renderedItems = multiSection
       ? this.renderSections()
@@ -394,7 +392,6 @@ export default class Autowhatever extends Component {
       'aria-expanded': isOpen,
       ...theme(
         `react-autowhatever-${id}-container`,
-        'clearable',
         'container',
         isOpen && 'containerOpen'
       ),
@@ -436,7 +433,6 @@ export default class Autowhatever extends Component {
     return (
       <div {...containerProps}>
         {inputComponent}
-        {childForm}
         {itemsContainer}
       </div>
     );
