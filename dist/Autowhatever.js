@@ -386,7 +386,7 @@ var Autowhatever = /*#__PURE__*/function (_Component) {
         'aria-haspopup': 'listbox',
         'aria-owns': itemsContainerId,
         'aria-expanded': isOpen
-      }, theme("react-autowhatever-".concat(id, "-container"), 'container', isOpen && 'containerOpen'), {}, this.props.containerProps);
+      }, theme("react-autowhatever-".concat(id, "-container"), 'clearable', 'container', isOpen && 'containerOpen'), {}, this.props.containerProps);
 
       var inputComponent = renderInputComponent(_objectSpread({
         type: typeForm,
