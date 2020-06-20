@@ -394,6 +394,7 @@ export default class Autowhatever extends Component {
       'aria-expanded': isOpen,
       ...theme(
         `react-autowhatever-${id}-container`,
+        'clearable',
         'container',
         isOpen && 'containerOpen'
       ),
